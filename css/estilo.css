@@ -25,7 +25,7 @@ html, body {
 
 /*seçao Home (Hero Capa)*/
 #home{
-    background: url('../imagens/capa.png');
+    background: linear-gradient(to bottom, rgba(202, 60, 218, 0.08), rgba(71, 26, 172, 0.8)), url('../imagens/capa.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ html, body {
 .capa h1 {
     font-size: 3rem;
     font-weight: 900;
-    letter-spacing: -0.5em;
+    letter-spacing: -0.05em;
     margin-bottom: 30px;
 }
 
@@ -113,4 +113,62 @@ html, body {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Recursos (iPhones) */
+#recursos h3 {
+    color: #9bf0e1; /* Verde claro nos títulos dessa seção */
+}
+
+.rotacionar {
+    transform: rotate(30deg); /* Inclina os iPhones */
+    padding-left: 80px;
+    margin-top: -50px; /* Sobe um pouco para sobrepor */
+    margin-bottom: 80px;
+}
+
+/* Rodapé */
+footer {
+    background: #000;
+    background-image: url('../imagens/ruido.png'); /* Textura de fundo */
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+footer .navbar-nav a {
+    color: white !important;
+    font-size: 0.9em;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    margin-left: 0px; /* Remove margem padrão da navbar */
+    font-weight: normal;
+}
+
+footer .navbar-nav a:hover {
+    color: #1db954 !important; /* Verde Spotify no hover */
+    text-decoration: none;
+}
+
+footer img {
+    max-width: 100%;
+}
+
+footer .list-inline-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Garante que fiquem redondos */
+    background: #222; /* Fundo cinza escuro no ícone */
+    padding: 10px; /* Espaço interno */
+}
+
+footer .list-inline-item img:hover {
+    background: #444; /* Clareia ao passar o mouse */
 }
