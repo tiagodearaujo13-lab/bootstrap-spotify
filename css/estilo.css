@@ -1,5 +1,116 @@
-/*
-* 
-* @author Jamilton Damasceno
-*/
+/* Layout Geral */
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Evita barra de rolagem horizontal */
+    font-family: Helvetica, Arial, sans-serif;
+}
 
+/* Navbar */
+.bg-transparent-custom {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-trasparente */
+    padding: 15px 0px;
+    transition: background 0.5s;
+}
+
+.navbar .nav-link:hover {
+    color: #9bf0e1 !important; /* Verde claro no hover */
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+    opacity: 0.3;
+}
+
+/*seçao Home (Hero Capa)*/
+#home{
+    background: url('../imagens/capa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    color: white;
+}
+
+.capa {
+    text-align: center;
+}
+
+.capa h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -0.5em;
+    margin-bottom: 30px;
+}
+
+/* Botões Customizados */
+.btn-custom {
+    border-radius: 500px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 15px 30px;
+    font-weight: 700;
+    margin: 0 10px;
+    letter-spacing: 1px;
+    transition: transform 0.2s;
+}
+
+.btn-custom:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o rato */
+}
+
+.btn-roxo {
+    background: #452a5a;
+    color: white;
+    border: none;
+}
+
+.btn-roxo:hover {
+    background: #5c3d75;
+    color: white;
+}
+
+.btn-branco {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-branco:hover { 
+    background: white;
+    color: black;
+}
+/* Seção Serviços */
+.caixa {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: white;
+}
+
+.caixa h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #452a5a;
+}
+
+.caixa h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1bd954; /* Verde Spotify */
+    margin-bottom: 10px;
+}
+
+.caixa p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Ajuste imagens */
+.albuns img {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
